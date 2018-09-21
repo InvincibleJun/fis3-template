@@ -12,8 +12,8 @@ module.exports = appInfo => {
 	config.middleware = [];
 
 	config.static = {
-		prefix: '',
-		dir: path.join(appInfo.baseDir, '../release/static'),
+		prefix: '/static',
+		dir: path.join(appInfo.baseDir, 'release/static'),
 		dynamic: true,
 		preload: false,
 		maxAge: 31536000,
@@ -24,7 +24,7 @@ module.exports = appInfo => {
 		mapping: {
 			'.html': 'ejs'
 		},
-		root: path.join(appInfo.baseDir, '../release/template')
+		root: path.join(appInfo.baseDir, './release/template')
 	};
 
 	return config;
