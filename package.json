@@ -8,7 +8,7 @@
 		"dev": "cd src && fis3 server clean && fis3 server start && fis3 release -wL dev",
 		"build": "cd src && cross-env NODE_ENV=prod fis3 release -d ../release pord",
 		"dev:server": "egg-bin dev",
-		"start:server": "egg-scripts start --daemon --title=d1-front -p 6001",
+		"start:server": "egg-scripts start --daemon --title=d1-front -p 7005",
 		"stop": "egg-scripts stop --title=d1-front",
 		"debug": "egg-bin debug",
 		"test:server": "npm run lint -- --fix && npm run test-local",
