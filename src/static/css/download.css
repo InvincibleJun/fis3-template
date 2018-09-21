@@ -1,3 +1,58 @@
-a {
-  color: #cccccc;  
+.container div {
+	overflow: hidden;
+	background-size: cover;
+}
+
+.container > div:nth-child(1) {
+	height: 133.3333vw;
+	background-image: url(/static/imgs/01.jpg);
+}
+
+.container > div:nth-child(2) {
+	height: 173.0667vw;
+	background-image: url(/static/imgs/02.jpg);
+}
+
+.container > div:nth-child(2) img {
+	width: 54.6667vw;
+	height: 43.7333vw;
+	margin: 0 auto;
+	display: block;
+	padding-top: 109.3333vw;
+}
+
+.container > div:nth-child(3) {
+	height: 209.0667vw;
+	background-image: url(/static/imgs/03.jpg);
+}
+
+.container > div:nth-child(4) {
+	height: 175.7333vw;
+	background-image: url(/static/imgs/04.jpg);
+}
+
+.btn {
+	display: block;
+	width: 64vw;
+	height: 11.7333vw;
+	text-align: center;
+	line-height: 11.7333vw;
+	margin: 0 auto;
+	font-size: 4vw;
+}
+
+.btn.btn-iphone {
+	margin-top: 98.6667vw;
+	color: #ffef1d;
+}
+
+.btn-android {
+	margin-top: 3.2vw;
+	color: #fe5223;
+}
+
+.btn img {
+	margin-right: 1.6vw;
+	width: 3.4667vw;
+	height: 4vw;
 }

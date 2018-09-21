@@ -4,9 +4,7 @@ const Controller = require('egg').Controller;
 
 class HomeController extends Controller {
 	async index() {
-		await this.ctx.render('h5/index.html', {
-			ios: '1'
-		});
+		await this.ctx.render('h5/index.html');
 	}
 
 	async notFound() {
