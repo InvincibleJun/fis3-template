@@ -7,12 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../../static/lib/css/reset.css">
-  <link rel="stylesheet" href="../../static/css/download.css?__inline">
+  <link rel="stylesheet" href="../../static/css/download.scss?__inline">
 </head>
 
 <body>
   <div class="container">
-
     <div>
       <a href="www.baidu.com" class="btn btn-iphone">
         <img src="../../static/imgs/Android.png" />iPhone下载
@@ -27,9 +26,11 @@
     <div></div>
     <div></div>
   </div>
+  <script type="text/javascript" src="../../static/lib/js/mod.js"></script>
 
-
-
+  <script>
+    require.async('$');
+  </script>
 </body>
 
 </html>

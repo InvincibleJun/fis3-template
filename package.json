@@ -7,6 +7,7 @@
 	"scripts": {
 		"dev": "cd src && fis3 server clean && fis3 server start && fis3 release -wL dev",
 		"build": "cd src && cross-env NODE_ENV=prod fis3 release -d ../release pord",
+		"build:server": "cd src && cross-env NODE_ENV=prod fis3 release -d ../../release pord",
 		"dev:server": "egg-bin dev",
 		"start:server": "egg-scripts start --daemon --title=d1-front -p 7005",
 		"stop": "egg-scripts stop --title=d1-front",
@@ -20,6 +21,8 @@
 	},
 	"license": "ISC",
 	"dependencies": {
+		"babel-preset-stage-2": "^6.24.1",
+		"babel-runtime": "^6.26.0",
 		"egg": "^2.2.1",
 		"egg-scripts": "^2.5.0",
 		"egg-view-ejs": "^2.0.0",
@@ -30,16 +33,26 @@
 	"devDependencies": {
 		"autod": "^3.0.1",
 		"autod-egg": "^1.0.0",
+		"babel-plugin-transform-runtime": "^6.23.0",
+		"babel-preset-env": "^1.7.0",
+		"cross-env": "^5.2.0",
 		"egg-bin": "^4.3.5",
 		"egg-ci": "^1.8.0",
 		"egg-mock": "^3.14.0",
+		"egg-proxy": "^1.1.0",
 		"eslint": "^4.11.0",
 		"eslint-config-egg": "^6.0.0",
-		"webstorm-disable-index": "^1.2.0",
-		"cross-env": "^5.2.0",
+		"fis-parser-babel-6.x": "^6.24.1",
 		"fis-parser-node-sass": "^1.0.4",
+		"fis3-hook-amd": "^0.2.2",
+		"fis3-hook-commonjs": "^0.1.27",
 		"fis3-hook-module": "^1.2.2",
 		"fis3-parser-ejs": "^1.0.3",
-		"fis3-parser-html-ejs": "^1.0.3"
+		"fis3-parser-html-ejs": "^1.0.3",
+		"fis3-postpackager-loader": "^2.1.11",
+		"fis3-postprocessor-postcss": "^0.2.0",
+		"koa-proxy": "^0.9.0",
+		"postcss-px-to-viewport": "0.0.3",
+		"webstorm-disable-index": "^1.2.0"
 	}
 }
